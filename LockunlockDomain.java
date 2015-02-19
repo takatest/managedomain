@@ -9,7 +9,6 @@ public class LockunlockDomain {
 
 	// lock domain
 	public void lockdomain(WebDriver driver, String domain){
-	
 		if (domain.endsWith(".com") ||domain.endsWith(".net")|| domain.endsWith(".biz") || domain.endsWith(".info") || domain.endsWith(".org")){
 			driver.findElement(By.linkText("Lock/Unlock Domain")).click();
 		    driver.findElement(By.name("submit")).click();

@@ -56,4 +56,12 @@ public class CheckDomainSpace {
 			return false;
 		}
 	}
+	// check if domain AU domain or not
+	public boolean audomain(String domain){
+		if ( domain.endsWith(".com.au") || domain.endsWith(".net.au") || domain.endsWith(".id.au") || domain.endsWith(".asn.au")){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }

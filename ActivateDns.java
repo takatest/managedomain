@@ -13,7 +13,6 @@ public class ActivateDns {
 	public void activatedns(WebDriver driver, String baseUrl, String domainName){
 
 		Gobackmyaccount =new Gobackmyaccount() ;		// go back to my account and search domain
-
 		if (domainName.endsWith(".com") ||domainName.endsWith(".net") || domainName.endsWith(".info") || domainName.endsWith(".org")){
 				driver.findElement(By.linkText("Activate DNS")).click();
 				driver.findElement(By.id("tandc")).click();
@@ -21,10 +20,6 @@ public class ActivateDns {
 			    // Checking Thank you
 			    assertEquals("Thank You", driver.findElement(By.cssSelector("div.dnsDetailsDiv > h3")).getText());
 				System.out.println("  @--Activate DNS end");
-//			}
-//		else{
-	//			System.out.println("  $--Activate DNS failed. it could be already activate");
-//			}
 		}else{
 			System.out.println("  $--Not support Activate DNS end");
 		}

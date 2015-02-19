@@ -12,7 +12,6 @@ public class ChangeOwner {
     private static Gobackmyaccount	Gobackmyaccount = new Gobackmyaccount();		// go back to my account and search domain
 	private static CheckDomainSpace	CheckDomainSpace=new CheckDomainSpace();		// check if domain space can support or not
 
-	
     public void changeonwer(WebDriver driver, String baseUrl, String domainname){
     	
     	// change domain owner support only com/net not sure why
