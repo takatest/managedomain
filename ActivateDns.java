@@ -19,7 +19,7 @@ public class ActivateDns {
 			    driver.findElement(By.id("enableDnsButton")).click();
 			    // Checking Thank you
 			    assertEquals("Thank You", driver.findElement(By.cssSelector("div.dnsDetailsDiv > h3")).getText());
-				System.out.println("  @--Activate DNS end");
+				System.out.println(" @--Activate DNS end");
 		}else{
 			System.out.println("  $--Not support Activate DNS end");
 		}

@@ -23,6 +23,6 @@ public class CancelDomain {
 
 		//checking Successfully message with regular expression
 		assertTrue(Pattern.compile("[Successfully cancelled domain name:]\\b[a-zA-Z]+\\b").matcher(driver.findElement(By.id("alerts")).getText()).find());
-		System.out.println("  @--Cancel domain end");
+		System.out.println(" @--Cancel domain end");
 	}
 }

@@ -56,7 +56,7 @@ public class ChangeOwner {
 
 			System.out.println("  @--Change domain Owner end");
 		}else{
-			System.out.println("  $--Not supprt Change domain Owner end");
+			System.out.println("   $--Not supprt Change domain Owner end");
 		}
     }
 }

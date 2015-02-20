@@ -26,7 +26,7 @@ public class AutoRenew {
 			System.out.println("   @--Auto-renewal Off");
 			System.out.println("  @--Auto-renewal end");
 		}else{
-			System.out.println("  $--Not supprt Auto-renewal end");
+			System.out.println("   $--Not supprt Auto-renewal end");
 		}
 	}
 }

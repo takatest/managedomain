@@ -13,6 +13,6 @@ public class Redelegate {
 	    driver.findElement(By.name("submitbutton")).click();
 	    assertEquals("Name servers were successfully updated.", driver.findElement(By.cssSelector("#alerts > p")).getText());
 	    
-		System.out.println("  @--Redelegate end");
+		System.out.println(" @--Redelegate end");
 	}
 }

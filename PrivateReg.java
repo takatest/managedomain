@@ -42,7 +42,7 @@ public class PrivateReg {
 		    assertEquals("Suspended", driver.findElement(By.linkText("Suspended")).getText());
 			System.out.println("  @--Private reg active end");
 		}else{
-			System.out.println("  $--Not support Private reg Active end");
+			System.out.println("   $--Not support Private reg Active end");
 		}
 	}
 	
@@ -55,7 +55,7 @@ public class PrivateReg {
 	
 		    System.out.println("  @--Private reg suspend end");
 		}else{
-			System.out.println("  $--Not support Private reg Active end");
+			System.out.println("    $--Not support Private reg suspend end");
 		}
 	}	
 }

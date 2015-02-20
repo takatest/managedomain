@@ -46,7 +46,7 @@ public class Contactupdate {
 		// go back to the under my account
 		Gobackmyaccount.goback(driver, baseUrl, domain);
 
-		System.out.println("  @--Contact update end");
+		System.out.println(" @--Contact update end");
 	}
 	public void advancededit(WebDriver driver, String domain){
 		
@@ -121,7 +121,7 @@ public class Contactupdate {
 		    driver.findElement(By.name("proceedbutton")).click();
 		    assertEquals("Contacts-Updated", driver.findElement(By.cssSelector("#alerts > p")).getText());
 
-		    System.out.println("    @--Contact update advanced edit end");
+		    System.out.println("   @--Contact update advanced edit end");
 	}
 
 }

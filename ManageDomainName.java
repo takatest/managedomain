@@ -36,9 +36,9 @@ public class ManageDomainName {
     private static CheckDomainSpace			CheckDomainSpace;		// check if domain space can support private reg or not
     private static SearchDomain				SearchDomain;			// Search domain
     private static int						renew_year = 1;			// renew year				
-    private static int						domain_num = 3;			// number of domain
+    private static int						domain_num = 1;			// number of domain
 	private static String					domain = "remind90r20150209170557";
-    private static String[] 				domain_space = {"org","net","com","net"};// domain space
+    private static String[] 				domain_space = {"melbourne","net","com","net"};// domain space
 	private String 							myaccount = "TAKAAUTO";			// my account			property
 	private String 							password = "password";					// my account password	property
 
@@ -110,16 +110,16 @@ public class ManageDomainName {
 		driver.get(baseUrl + "/cc/myaccount/domains/index");			// go to the under my account
 		SearchDomain.searchdomain(driver, domainName);					// go to under domain domain page
 		System.out.print("1");
-/*		LockunlockDomain.lockdomain(driver, domainName);				// lock and unlock domain
-		System.out.print("2");
+		LockunlockDomain.lockdomain(driver, domainName);				// lock and unlock domain
+/*		System.out.print("2");
 		RenewDomain.renew(driver, baseUrl, domainName, renew_year);		// renew domain for 1 year 
-		System.out.print("3");
+*/		System.out.print("3");
 		RetrieveRegkey.retriveregkey(driver);							// Retrieve registry key
 		System.out.print("4");
 		ShowAuthcode.showsauthcode(driver);								// shows Auth Code
 
 		// private registration, show Authcode, Change ownership support only com/net/info/org 
-/*		System.out.print("5");
+		System.out.print("5");
 		PrivateReg.privatebuy(driver, domainName, baseUrl);				// private registration On
 		PrivateReg.active(driver,domainName);							// private registration click active
 		PrivateReg.suspend(driver,domainName);							// private registration click suspend
@@ -132,18 +132,17 @@ public class ManageDomainName {
 		ShowAuthcode.viewauthcode(driver, domainName);					// view Domain Password
 		System.out.print("9");
 		ChangeOwner.changeonwer(driver,baseUrl,domainName);				// Change ownership
-*/			
 		System.out.print("10");
 		Contactupdate.update(driver, baseUrl, domainName);				// contact update
 		Contactupdate.advancededit(driver,domainName);								// contact update advanced edit
-/*		
 		System.out.print("11");
+
 		Redelegate.delegate(driver);									// Redelegate
 		System.out.print("12");
 		ActivateDns.activatedns(driver, baseUrl, domainName);			// Activate DNS
 		System.out.print("13");
 		CancelDomain.cancel(driver);									// cancel domain
-*/	}
+	}
 	
 	@AfterClass
 	public void afterClass() {

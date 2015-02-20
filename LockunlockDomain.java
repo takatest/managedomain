@@ -22,7 +22,7 @@ public class LockunlockDomain {
 			System.out.println("  Domain was unlocked successfully");
 			System.out.println("  @--Lock unlock domain End");
 		}else{
-			System.out.println("  $--Not support Lock unlock domain");
+			System.out.println("   $--Not support Lock unlock domain");
 		}
 	}
 }
