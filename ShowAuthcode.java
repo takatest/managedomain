@@ -25,7 +25,7 @@ public class ShowAuthcode {
 			assertTrue(Pattern.compile("[Domain name password (authinfo):]\\b[a-zA-Z]+\\b").matcher(driver.findElement(By.xpath("//div[@id='alerts']/p")).getText()).find());
 			System.out.println("  @--view domain password end");
 		}else{
-			System.out.println("  $--Not support View Auth code");
+			System.out.println("   $--Not support View Auth code");
 		}
 	}
 }

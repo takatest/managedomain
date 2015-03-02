@@ -38,7 +38,7 @@ public class ManageDomainName {
     private static int						renew_year = 1;			// renew year				
     private static int						domain_num = 1;			// number of domain
 	private static String					domain = "remind90r20150209170557";
-    private static String[] 				domain_space = {"melbourne","net","com","net"};// domain space
+    private static String[] 				domain_space = {"creditcard","net","com","net"};// domain space
 	private String 							myaccount = "TAKAAUTO";			// my account			property
 	private String 							password = "password";					// my account password	property
 
@@ -134,7 +134,7 @@ public class ManageDomainName {
 		ChangeOwner.changeonwer(driver,baseUrl,domainName);				// Change ownership
 		System.out.print("10");
 		Contactupdate.update(driver, baseUrl, domainName);				// contact update
-		Contactupdate.advancededit(driver,domainName);								// contact update advanced edit
+		Contactupdate.advancededit(driver,domainName);					// contact update advanced edit
 		System.out.print("11");
 
 		Redelegate.delegate(driver);									// Redelegate
