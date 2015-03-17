@@ -27,8 +27,6 @@ public class RenewDomain {
 		// go back to the under my account
 		Gobackmyaccount.goback(driver, baseUrl, domain);
 		System.out.println("  @--Renew Domain End");
-
-	
 	}
 /*	
 	public void renewnoprivate(WebDriver driver, String domain){

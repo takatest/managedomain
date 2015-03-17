@@ -31,7 +31,6 @@ public class PrivateReg {
 			}
 			// go back to the under my account
 			Gobackmyaccount.goback(driver, baseUrl, domain);
-	
 		}
 	}	
 	

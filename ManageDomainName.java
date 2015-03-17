@@ -113,7 +113,7 @@ public class ManageDomainName {
 		LockunlockDomain.lockdomain(driver, domainName);				// lock and unlock domain
 /*		System.out.print("2");
 		RenewDomain.renew(driver, baseUrl, domainName, renew_year);		// renew domain for 1 year 
-*/		System.out.print("3");
+*//*		System.out.print("3");
 		RetrieveRegkey.retriveregkey(driver);							// Retrieve registry key
 		System.out.print("4");
 		ShowAuthcode.showsauthcode(driver);								// shows Auth Code
@@ -128,7 +128,7 @@ public class ManageDomainName {
 		IcannStatus.sentemail(driver, domainName);						// ICANN Status send email
 		System.out.print("7");
 		AutoRenew.onoff(driver,domainName);								// Auto renew On and Off
-		System.out.print("8");
+*/		System.out.print("8");
 		ShowAuthcode.viewauthcode(driver, domainName);					// view Domain Password
 		System.out.print("9");
 		ChangeOwner.changeonwer(driver,baseUrl,domainName);				// Change ownership

@@ -13,5 +13,4 @@ public class Gobackmyaccount {
 		// search domain
 		search.searchdomain(driver, domain);
 	}
-	
 }

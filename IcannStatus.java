@@ -24,7 +24,6 @@ public class IcannStatus {
 			System.out.println("  @--ICANN Status end");
 		}else{
 			System.out.println("  $--Not support ICANN Status");
-			
 		}
 	}
 }
